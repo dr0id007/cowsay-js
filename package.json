@@ -8,8 +8,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.js --max-warnings 5"
+    "lint": "eslint src/**/*.js --max-warnings 5",
+    "size": "npm build && size-limit"
   },
+  "size-limit": [
+    {
+      "path": "build/static/**/*.{js,css,svg,woff,woff2,png,ttf,html}"
+    }
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
